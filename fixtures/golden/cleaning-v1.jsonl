@@ -1,0 +1,16 @@
+{"case_id":"normal_chinese","expected_clean_text":"普通中文文本保持不变。","expected_review_reasons":[],"raw_text":"普通中文文本保持不变。"}
+{"case_id":"empty","expected_clean_text":"","expected_review_reasons":["empty_text"],"raw_text":""}
+{"case_id":"whitespace_only","expected_clean_text":"","expected_review_reasons":["empty_text"],"raw_text":" \r\n\t "}
+{"case_id":"zero_width","expected_clean_text":"零宽字符","expected_review_reasons":["short_text"],"raw_text":"零​宽⁠字符"}
+{"case_id":"nfkc","expected_clean_text":"Full-width 123","expected_review_reasons":[],"raw_text":"Ｆｕｌｌ－ｗｉｄｔｈ　１２３"}
+{"case_id":"html_entities","expected_clean_text":"第一段\n第二段 & 实体","expected_review_reasons":[],"raw_text":"<p>第一段<br>第二段 &amp; 实体</p>"}
+{"case_id":"script_style","expected_clean_text":"保留正文","expected_review_reasons":["short_text"],"raw_text":"<script>坏内容</script><style>x{}</style><p>保留正文</p>"}
+{"case_id":"paragraphs","expected_clean_text":"甲\n乙","expected_review_reasons":["short_text"],"raw_text":"<p>甲</p><p>乙</p>"}
+{"case_id":"exact_template","expected_clean_text":"正文内容","expected_review_reasons":["short_text"],"raw_text":"站点页头｜正文内容｜免责声明：仅供合成测试｜相关推荐"}
+{"case_id":"pure_symbol","expected_clean_text":"!!!——","expected_review_reasons":["pure_symbol_text","short_text"],"raw_text":"!!!——"}
+{"case_id":"short_text","expected_clean_text":"短文","expected_review_reasons":["short_text"],"raw_text":"短文"}
+{"case_id":"template_negative","expected_clean_text":"站点页头相似但不精确|正文","expected_review_reasons":[],"raw_text":"站点页头相似但不精确|正文"}
+{"case_id":"less_than_negative","expected_clean_text":"2 < 3 且 5 > 4","expected_review_reasons":[],"raw_text":"2 < 3 且 5 > 4"}
+{"case_id":"exact_duplicate_preserved","expected_clean_text":"完全重复文本:同一内容保持逐字一致。","expected_review_reasons":[],"raw_text":"完全重复文本：同一内容保持逐字一致。"}
+{"case_id":"near_duplicate_preserved","expected_clean_text":"近似重复文本包含甲乙丙丁和一个核心事实。","expected_review_reasons":[],"raw_text":"近似重复文本包含甲乙丙丁和一个核心事实。"}
+{"case_id":"canonical_candidate_preserved","expected_clean_text":"完整候选正文。事实一完整,事实二完整,结尾完整。","expected_review_reasons":[],"raw_text":"完整候选正文。事实一完整，事实二完整，结尾完整。"}

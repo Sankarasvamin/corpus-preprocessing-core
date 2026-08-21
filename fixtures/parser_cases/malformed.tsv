@@ -1,0 +1,3 @@
+record_id	dataset_id	event_date_json	record_type	title_json	raw_text_json	category_signal_json	source_batch	synthetic
+case-bad-tsv	category_a	only-three-columns
+case-after-bad-tsv	category_a	"2026-08-01"	comment	null	"自包含解析案例正文"	"脉冲星观测信号"	parser-cases	true

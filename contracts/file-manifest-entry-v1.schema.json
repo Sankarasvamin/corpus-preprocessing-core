@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "file-manifest-entry-v1.schema.json",
+  "title": "FileManifestEntryV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relative_path", "byte_size", "sha256", "extension", "detected_format", "encoding_status", "file_status", "schema_version"],
+  "properties": {
+    "relative_path": {"type": "string", "minLength": 1},
+    "byte_size": {"type": "integer", "minimum": 0},
+    "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "extension": {"type": "string"},
+    "detected_format": {"type": "string", "enum": ["tsv", "json", "jsonl", "html", "unknown"]},
+    "encoding_status": {"type": "string", "enum": ["utf8", "utf8_bom", "invalid_utf8", "empty"]},
+    "file_status": {"type": "string", "enum": ["ok", "empty", "unsupported", "encoding_error", "io_error"]},
+    "schema_version": {"const": "file-manifest-entry-v1"}
+  }
+}
+

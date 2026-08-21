@@ -1,0 +1,6 @@
+{
+  "algorithm_version": "hash-rank-v1", "allocation_method": "simple_random", "filters": {},
+  "minimum_per_stratum": 0, "plan_id": "sample-simple-v1", "schema_version": "sample-plan-v1",
+  "seed": 20260820, "strata_keys": [], "target_size": 24
+}
+

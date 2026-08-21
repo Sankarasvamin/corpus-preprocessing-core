@@ -1,0 +1,5 @@
+{
+  "algorithm_version": "hash-rank-v1", "allocation_method": "proportional", "filters": {},
+  "minimum_per_stratum": 0, "plan_id": "sample-multifield-v1", "schema_version": "sample-plan-v1",
+  "seed": 20260820, "strata_keys": ["dataset_id", "event_date", "record_type", "metadata.source_format"], "target_size": 60
+}

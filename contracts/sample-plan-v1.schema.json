@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sample-plan-v1.schema.json",
+  "title": "SamplePlanV1",
+  "description": "可复现抽样计划。strata_keys 可引用 RecordV1 顶层字段或 metadata.<key>；null 和缺失值分别规范化为 __NULL__、__MISSING__。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plan_id",
+    "seed",
+    "target_size",
+    "strata_keys",
+    "allocation_method",
+    "minimum_per_stratum",
+    "filters",
+    "algorithm_version",
+    "schema_version"
+  ],
+  "properties": {
+    "plan_id": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer", "minimum": 0},
+    "target_size": {"type": "integer", "minimum": 1},
+    "strata_keys": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1, "pattern": "^[A-Za-z_][A-Za-z0-9_.]*$"},
+      "uniqueItems": true
+    },
+    "allocation_method": {
+      "type": "string",
+      "enum": ["simple_random", "proportional", "equal", "minimum_then_proportional"]
+    },
+    "minimum_per_stratum": {"type": "integer", "minimum": 0},
+    "filters": {"type": "object", "description": "键使用与 strata_keys 相同的字段路径；值可为标量、null 或允许值数组。"},
+    "algorithm_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "sample-plan-v1"}
+  }
+}
+

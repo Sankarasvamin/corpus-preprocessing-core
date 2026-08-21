@@ -1,0 +1,117 @@
+{
+  "algorithm_version": "fuzzy-template-clean-v1",
+  "auto_minimum_evidence": 2,
+  "best_match_margin": 300,
+  "candidate_limits": {
+    "max_length": 64,
+    "min_length": 3,
+    "min_length_ratio": 5000
+  },
+  "character_ngram": 3,
+  "matching_normalization": {
+    "ascii_lower": true,
+    "collapse_whitespace": true,
+    "nfkc": true
+  },
+  "minimum_evidence_floor": 7000,
+  "nfkc_score_examples": [
+    {
+      "candidate": "平台公告：内容仅供参考",
+      "template": "平台公告:内容仅供参考"
+    },
+    {
+      "candidate": "ＳＯＵＲＣＥ： ＳＹＮＴＨＥＴＩＣ ＮＥＷＳ",
+      "template": "SOURCE: SYNTHETIC NEWS"
+    }
+  ],
+  "protected_context_prefixes": [
+    "本文讨论",
+    "正文引用",
+    "有人说",
+    "并非",
+    "所谓",
+    "标题",
+    "结论",
+    "“",
+    "\""
+  ],
+  "rule_version": "1.0.0",
+  "schema_version": "fuzzy-cleaning-config-v1",
+  "score_weights": {
+    "char_jaccard": 25,
+    "partial_ratio": 20,
+    "ratio": 25,
+    "token_set": 15,
+    "token_sort": 15
+  },
+  "sensitivity_grid": {
+    "auto_thresholds": [8000, 8500, 9000, 9500],
+    "review_thresholds": [6000, 6500, 7000, 7500, 8000]
+  },
+  "templates": [
+    {
+      "allowed_positions": ["prefix", "line"],
+      "canonical_text": "平台公告:内容仅供参考",
+      "compatible_regex": "^平台公告[:：][ ]*内容仅供参考$",
+      "template_id": "platform_notice"
+    },
+    {
+      "allowed_positions": ["suffix", "line"],
+      "canonical_text": "免责声明:本文仅供学习交流",
+      "compatible_regex": "^免责声明[:：][ ]*本文仅供学习交流$",
+      "template_id": "learning_disclaimer"
+    },
+    {
+      "allowed_positions": ["prefix", "suffix", "line"],
+      "canonical_text": "来源:合成通讯社",
+      "compatible_regex": "^来源[:：][ ]*合成通讯社$",
+      "template_id": "synthetic_source"
+    },
+    {
+      "allowed_positions": ["suffix", "line"],
+      "canonical_text": "相关推荐",
+      "compatible_regex": "^相关推荐$",
+      "template_id": "recommendation"
+    },
+    {
+      "allowed_positions": ["prefix", "line"],
+      "canonical_text": "作者:匿名编辑",
+      "compatible_regex": "^作者[:：][ ]*[A-Za-z0-9一-龥]{2,8}$",
+      "template_id": "author_byline"
+    },
+    {
+      "allowed_positions": ["suffix", "line"],
+      "canonical_text": "更新日期:2026-08-21",
+      "compatible_regex": "^更新日期[:：][ ]*[0-9]{4}[-/][0-9]{2}[-/][0-9]{2}$",
+      "template_id": "update_date"
+    },
+    {
+      "allowed_positions": ["prefix", "line"],
+      "canonical_text": "公告编号:2026-001",
+      "compatible_regex": "^公告编号[:：][ ]*[0-9]{4}-[0-9]{3}$",
+      "template_id": "notice_number"
+    },
+    {
+      "allowed_positions": ["prefix", "suffix", "line"],
+      "canonical_text": "SOURCE: SYNTHETIC NEWS",
+      "compatible_regex": "^SOURCE[:：][ ]*SYNTHETIC NEWS$",
+      "template_id": "ascii_source"
+    },
+    {
+      "allowed_positions": ["prefix", "line"],
+      "canonical_text": "系统提示:请勿回复",
+      "compatible_regex": "^系统提示[:：][ ]*请勿回复$",
+      "template_id": "system_hint"
+    },
+    {
+      "allowed_positions": ["prefix", "line"],
+      "canonical_text": "系统通知:请勿回复",
+      "compatible_regex": "^系统通知[:：][ ]*请勿回复$",
+      "template_id": "system_notice"
+    }
+  ],
+  "thresholds": {
+    "auto": 9500,
+    "review": 6000
+  }
+}

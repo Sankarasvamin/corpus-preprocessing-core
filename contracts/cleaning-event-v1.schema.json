@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cleaning-event-v1.schema.json",
+  "title": "CleaningEventV1",
+  "description": "单条记录在确定性清洗阶段中的可审计事件。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id", "stage", "rule_id", "rule_version", "match_method",
+    "action", "reason_code", "decision", "matched_span", "removed_chars",
+    "score", "before_hash", "after_hash", "metrics", "algorithm_version", "schema_version"
+  ],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "stage": {"type": "string", "minLength": 1},
+    "rule_id": {"type": "string", "minLength": 1},
+    "rule_version": {"type": "string", "minLength": 1},
+    "match_method": {"type": "string", "enum": ["exact", "regex", "parser", "unicode", "structural", "fuzzy"]},
+    "action": {"type": "string", "minLength": 1},
+    "reason_code": {"type": "string", "minLength": 1},
+    "decision": {"type": "string", "enum": ["applied", "review", "skipped"]},
+    "matched_span": {"type": ["string", "null"]},
+    "removed_chars": {"type": "integer", "minimum": 0},
+    "score": {"type": "number", "minimum": 0, "maximum": 1},
+    "before_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "after_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "metrics": {"type": "object"},
+    "algorithm_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "cleaning-event-v1"}
+  }
+}
+

@@ -1,0 +1,82 @@
+record_id	dataset_id	event_date_json	record_type	title_json	raw_text_json	category_signal_json	source_batch	synthetic
+syn-0002	category_b	"2026-08-01"	comment	null	"  \n\t  "	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0004	category_d	"2026-08-01"	article	"合成标题 4"	"Ｆｕｌｌ－ｗｉｄｔｈ　１２３ 与 half-width 123"	"古籍修复观测信号"	batch-2026-08-01	true
+syn-0009	category_a	"2026-08-01"	reply	null	"近似重复文本包含甲乙丙丁和一个核心事实。"	"脉冲星观测信号"	batch-2026-08-01	true
+syn-0011	category_c	"2026-08-01"	comment	null	"链式样本 甲乙丙丁 戊己庚辛"	"城市交通观测信号"	batch-2026-08-01	true
+syn-0013	category_a	"2026-08-08"	article	"合成标题 13"	"链式样本 壬癸子丑 寅卯辰巳"	"脉冲星观测信号"	batch-2026-08-08	true
+syn-0018	category_b	"2026-08-08"	reply	null	"疑似截断正文，后续内容"	"海岸湿地观测信号"	batch-2026-08-08	true
+syn-0020	category_d	null	comment	null	"古籍修复观测信号：第20条comment样本，包含清晰的匿名事实 5803。"	"古籍修复观测信号"	batch-date-missing	true
+syn-0022	category_b	"2026-08-08"	article	"合成标题 22"	"海岸湿地观测信号：第22条article样本，包含局部的匿名事实 5443。"	"海岸湿地观测信号"	batch-2026-08-08	true
+syn-0027	category_c	"2026-08-15"	reply	null	"城市交通观测信号：第27条reply样本，包含局部的匿名事实 4541。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0029	category_a	"2026-08-15"	comment	null	"脉冲星观测信号：第29条comment样本，包含稳定的匿名事实 6245。"	"脉冲星观测信号"	batch-2026-08-15	true
+syn-0031	category_c	"2026-08-15"	article	"合成标题 31"	"城市交通观测信号：第31条article样本，包含可复核的匿名事实 1768。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0036	category_d	"2026-08-15"	reply	null	"古籍修复观测信号：第36条reply样本，包含连续的匿名事实 9844。"	"古籍修复观测信号"	batch-2026-08-15	true
+syn-0038	category_b	"2026-08-22"	comment	null	"海岸湿地观测信号：第38条comment样本，包含稳定的匿名事实 1531。"	"海岸湿地观测信号"	batch-2026-08-22	true
+syn-0040	category_d	"2026-08-22"	article	"合成标题 40"	"古籍修复观测信号：第40条article样本，包含可复核的匿名事实 3397。"	"古籍修复观测信号"	batch-2026-08-22	true
+syn-0045	category_a	"2026-08-22"	reply	null	"脉冲星观测信号：第45条reply样本，包含清晰的匿名事实 1066。"	"脉冲星观测信号"	batch-2026-08-22	true
+syn-0047	category_c	"2026-08-22"	comment	null	"城市交通观测信号：第47条comment样本，包含可复核的匿名事实 6621。"	"城市交通观测信号"	batch-2026-08-22	true
+syn-0049	category_a	"2026-08-01"	article	"合成标题 49"	"脉冲星观测信号：第49条article样本，包含可复核的匿名事实 9021。"	"脉冲星观测信号"	batch-2026-08-01	true
+syn-0054	category_b	"2026-08-01"	reply	null	"海岸湿地观测信号：第54条reply样本，包含连续的匿名事实 2199。"	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0056	category_d	"2026-08-01"	comment	null	"古籍修复观测信号：第56条comment样本，包含可复核的匿名事实 1665。"	"古籍修复观测信号"	batch-2026-08-01	true
+syn-0058	category_b	"2026-08-01"	article	"合成标题 58"	"海岸湿地观测信号：第58条article样本，包含局部的匿名事实 2179。"	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0063	category_c	"2026-08-08"	reply	null	"城市交通观测信号：第63条reply样本，包含可复核的匿名事实 3191。"	"城市交通观测信号"	batch-2026-08-08	true
+syn-0065	category_a	"2026-08-08"	comment	null	"脉冲星观测信号：第65条comment样本，包含稳定的匿名事实 4133。"	"脉冲星观测信号"	batch-2026-08-08	true
+syn-0067	category_c	"2026-08-08"	article	"合成标题 67"	"城市交通观测信号：第67条article样本，包含匿名的匿名事实 6854。"	"城市交通观测信号"	batch-2026-08-08	true
+syn-0072	category_d	"2026-08-08"	reply	null	"古籍修复观测信号：第72条reply样本，包含连续的匿名事实 8028。"	"古籍修复观测信号"	batch-2026-08-08	true
+syn-0074	category_b	"2026-08-15"	comment	null	"海岸湿地观测信号：第74条comment样本，包含清晰的匿名事实 6905。"	"海岸湿地观测信号"	batch-2026-08-15	true
+syn-0076	category_d	"2026-08-15"	article	"合成标题 76"	"古籍修复观测信号：第76条article样本，包含清晰的匿名事实 6054。"	"古籍修复观测信号"	batch-2026-08-15	true
+syn-0081	category_a	"2026-08-15"	reply	null	"脉冲星观测信号：第81条reply样本，包含连续的匿名事实 4779。"	"脉冲星观测信号"	batch-2026-08-15	true
+syn-0083	category_c	"2026-08-15"	comment	null	"城市交通观测信号：第83条comment样本，包含稳定的匿名事实 3293。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0085	category_a	"2026-08-22"	article	"合成标题 85"	"脉冲星观测信号：第85条article样本，包含连续的匿名事实 4562。"	"脉冲星观测信号"	batch-2026-08-22	true
+syn-0090	category_b	"2026-08-22"	reply	null	"海岸湿地观测信号：第90条reply样本，包含连续的匿名事实 3173。"	"海岸湿地观测信号"	batch-2026-08-22	true
+syn-0092	category_d	"2026-08-22"	comment	null	"古籍修复观测信号：第92条comment样本，包含连续的匿名事实 1279。"	"古籍修复观测信号"	batch-2026-08-22	true
+syn-0094	category_b	"2026-08-22"	article	"合成标题 94"	"海岸湿地观测信号：第94条article样本，包含连续的匿名事实 3823。"	"海岸湿地观测信号"	batch-2026-08-22	true
+syn-0099	category_c	"2026-08-01"	reply	null	"城市交通观测信号：第99条reply样本，包含清晰的匿名事实 2635。"	"城市交通观测信号"	batch-2026-08-01	true
+syn-0101	category_a	"2026-08-01"	comment	null	"脉冲星观测信号：第101条comment样本，包含清晰的匿名事实 6538。"	"脉冲星观测信号"	batch-2026-08-01	true
+syn-0103	category_c	"2026-08-01"	article	"合成标题 103"	"城市交通观测信号：第103条article样本，包含可复核的匿名事实 4821。"	"城市交通观测信号"	batch-2026-08-01	true
+syn-0108	category_d	"2026-08-01"	reply	null	"古籍修复观测信号：第108条reply样本，包含连续的匿名事实 4986。"	"古籍修复观测信号"	batch-2026-08-01	true
+syn-0110	category_b	"2026-08-08"	comment	null	"海岸湿地观测信号：第110条comment样本，包含可复核的匿名事实 4280。"	"海岸湿地观测信号"	batch-2026-08-08	true
+syn-0112	category_d	"2026-08-08"	article	"合成标题 112"	"古籍修复观测信号：第112条article样本，包含稳定的匿名事实 8264。"	"古籍修复观测信号"	batch-2026-08-08	true
+syn-0117	category_a	"2026-08-08"	reply	null	"脉冲星观测信号：第117条reply样本，包含可复核的匿名事实 7775。"	"脉冲星观测信号"	batch-2026-08-08	true
+syn-0119	category_c	"2026-08-08"	comment	null	"城市交通观测信号：第119条comment样本，包含可复核的匿名事实 3731。"	"城市交通观测信号"	batch-2026-08-08	true
+syn-0121	category_a	"2026-08-15"	article	"合成标题 121"	"脉冲星观测信号：第121条article样本，包含可复核的匿名事实 2991。"	"脉冲星观测信号"	batch-2026-08-15	true
+syn-0126	category_b	"2026-08-15"	reply	null	"海岸湿地观测信号：第126条reply样本，包含可复核的匿名事实 4064。"	"海岸湿地观测信号"	batch-2026-08-15	true
+syn-0128	category_d	"2026-08-15"	comment	null	"古籍修复观测信号：第128条comment样本，包含局部的匿名事实 2112。"	"古籍修复观测信号"	batch-2026-08-15	true
+syn-0130	category_b	"2026-08-15"	article	"合成标题 130"	"海岸湿地观测信号：第130条article样本，包含局部的匿名事实 4244。"	"海岸湿地观测信号"	batch-2026-08-15	true
+syn-0135	category_c	"2026-08-22"	reply	null	"城市交通观测信号：第135条reply样本，包含可复核的匿名事实 1949。"	"城市交通观测信号"	batch-2026-08-22	true
+syn-0137	category_a	"2026-08-22"	comment	null	"脉冲星观测信号：第137条comment样本，包含稳定的匿名事实 1439。"	"脉冲星观测信号"	batch-2026-08-22	true
+syn-0139	category_c	"2026-08-22"	article	"合成标题 139"	"城市交通观测信号：第139条article样本，包含局部的匿名事实 1397。"	"城市交通观测信号"	batch-2026-08-22	true
+syn-0144	category_d	"2026-08-22"	reply	null	"古籍修复观测信号：第144条reply样本，包含连续的匿名事实 6593。"	"古籍修复观测信号"	batch-2026-08-22	true
+syn-0146	category_b	"2026-08-01"	comment	null	"海岸湿地观测信号：第146条comment样本，包含稳定的匿名事实 8591。"	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0148	category_d	"2026-08-01"	article	"合成标题 148"	"古籍修复观测信号：第148条article样本，包含清晰的匿名事实 9457。"	"古籍修复观测信号"	batch-2026-08-01	true
+syn-0153	category_a	"2026-08-01"	reply	null	"脉冲星观测信号：第153条reply样本，包含清晰的匿名事实 1398。"	"脉冲星观测信号"	batch-2026-08-01	true
+syn-0155	category_c	"2026-08-01"	comment	null	"城市交通观测信号：第155条comment样本，包含连续的匿名事实 8051。"	"城市交通观测信号"	batch-2026-08-01	true
+syn-0157	category_a	"2026-08-08"	article	"合成标题 157"	"脉冲星观测信号：第157条article样本，包含可复核的匿名事实 9685。"	"脉冲星观测信号"	batch-2026-08-08	true
+syn-0162	category_b	"2026-08-08"	reply	null	"海岸湿地观测信号：第162条reply样本，包含局部的匿名事实 5083。"	"海岸湿地观测信号"	batch-2026-08-08	true
+syn-0164	category_d	"2026-08-08"	comment	null	"古籍修复观测信号：第164条comment样本，包含清晰的匿名事实 9893。"	"古籍修复观测信号"	batch-2026-08-08	true
+syn-0166	category_b	"2026-08-08"	article	"合成标题 166"	"海岸湿地观测信号：第166条article样本，包含可复核的匿名事实 7489。"	"海岸湿地观测信号"	batch-2026-08-08	true
+syn-0171	category_c	"2026-08-15"	reply	null	"城市交通观测信号：第171条reply样本，包含稳定的匿名事实 5170。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0173	category_a	"2026-08-15"	comment	null	"脉冲星观测信号：第173条comment样本，包含清晰的匿名事实 5861。"	"脉冲星观测信号"	batch-2026-08-15	true
+syn-0175	category_c	"2026-08-15"	article	"合成标题 175"	"城市交通观测信号：第175条article样本，包含可复核的匿名事实 2012。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0180	category_d	"2026-08-15"	reply	null	"古籍修复观测信号：第180条reply样本，包含局部的匿名事实 1034。"	"古籍修复观测信号"	batch-2026-08-15	true
+syn-0182	category_b	"2026-08-22"	comment	null	"海岸湿地观测信号：第182条comment样本，包含连续的匿名事实 5369。"	"海岸湿地观测信号"	batch-2026-08-22	true
+syn-0184	category_d	"2026-08-22"	article	"合成标题 184"	"古籍修复观测信号：第184条article样本，包含匿名的匿名事实 4596。"	"古籍修复观测信号"	batch-2026-08-22	true
+syn-0189	category_a	"2026-08-22"	reply	null	"脉冲星观测信号：第189条reply样本，包含可复核的匿名事实 2654。"	"脉冲星观测信号"	batch-2026-08-22	true
+syn-0191	category_c	"2026-08-22"	comment	null	"城市交通观测信号：第191条comment样本，包含可复核的匿名事实 5519。"	"城市交通观测信号"	batch-2026-08-22	true
+syn-0193	category_a	"2026-08-01"	article	"合成标题 193"	"脉冲星观测信号：第193条article样本，包含清晰的匿名事实 4897。"	"脉冲星观测信号"	batch-2026-08-01	true
+syn-0198	category_b	"2026-08-01"	reply	null	"海岸湿地观测信号：第198条reply样本，包含匿名的匿名事实 1920。"	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0200	category_d	"2026-08-01"	comment	null	"古籍修复观测信号：第200条comment样本，包含可复核的匿名事实 8653。"	"古籍修复观测信号"	batch-2026-08-01	true
+syn-0202	category_b	"2026-08-01"	article	"合成标题 202"	"海岸湿地观测信号：第202条article样本，包含匿名的匿名事实 5151。"	"海岸湿地观测信号"	batch-2026-08-01	true
+syn-0207	category_c	"2026-08-08"	reply	null	"城市交通观测信号：第207条reply样本，包含可复核的匿名事实 8460。"	"城市交通观测信号"	batch-2026-08-08	true
+syn-0209	category_a	"2026-08-08"	comment	null	"脉冲星观测信号：第209条comment样本，包含局部的匿名事实 2578。"	"脉冲星观测信号"	batch-2026-08-08	true
+syn-0211	category_c	"2026-08-08"	article	"合成标题 211"	"城市交通观测信号：第211条article样本，包含清晰的匿名事实 5902。"	"城市交通观测信号"	batch-2026-08-08	true
+syn-0216	category_d	"2026-08-08"	reply	null	"古籍修复观测信号：第216条reply样本，包含连续的匿名事实 5717。"	"古籍修复观测信号"	batch-2026-08-08	true
+syn-0218	category_b	"2026-08-15"	comment	null	"海岸湿地观测信号：第218条comment样本，包含清晰的匿名事实 6894。"	"海岸湿地观测信号"	batch-2026-08-15	true
+syn-0220	category_d	"2026-08-15"	article	"合成标题 220"	"古籍修复观测信号：第220条article样本，包含清晰的匿名事实 8807。"	"古籍修复观测信号"	batch-2026-08-15	true
+syn-0225	category_a	"2026-08-15"	reply	null	"脉冲星观测信号：第225条reply样本，包含清晰的匿名事实 1460。"	"脉冲星观测信号"	batch-2026-08-15	true
+syn-0227	category_c	"2026-08-15"	comment	null	"城市交通观测信号：第227条comment样本，包含局部的匿名事实 2156。"	"城市交通观测信号"	batch-2026-08-15	true
+syn-0229	category_a	"2026-08-22"	article	"合成标题 229"	"脉冲星观测信号：第229条article样本，包含可复核的匿名事实 6142。"	"脉冲星观测信号"	batch-2026-08-22	true
+syn-0234	category_b	"2026-08-22"	reply	null	"海岸湿地观测信号：第234条reply样本，包含清晰的匿名事实 9898。"	"海岸湿地观测信号"	batch-2026-08-22	true
+syn-0236	category_d	"2026-08-22"	comment	null	"古籍修复观测信号：第236条comment样本，包含可复核的匿名事实 1707。"	"古籍修复观测信号"	batch-2026-08-22	true
+syn-0238	category_b	"2026-08-22"	article	"合成标题 238"	"海岸湿地观测信号：第238条article样本，包含局部的匿名事实 5591。"	"海岸湿地观测信号"	batch-2026-08-22	true
+raw-tsv-bad-001	category_b	only-three-columns

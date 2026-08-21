@@ -1,0 +1,6 @@
+{
+  "algorithm_version": "hash-rank-v1", "allocation_method": "minimum_then_proportional", "filters": {},
+  "minimum_per_stratum": 5, "plan_id": "sample-dataset-v1", "schema_version": "sample-plan-v1",
+  "seed": 20260820, "strata_keys": ["dataset_id"], "target_size": 40
+}
+

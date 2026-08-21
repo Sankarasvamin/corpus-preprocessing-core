@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quarantine-record-v1.schema.json",
+  "title": "QuarantineRecordV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_file", "source_offset", "detected_format", "error_code", "message", "raw_fragment_hash", "parser_version", "schema_version"],
+  "properties": {
+    "source_file": {"type": "string", "minLength": 1},
+    "source_offset": {"type": "integer", "minimum": 0},
+    "detected_format": {"type": "string", "enum": ["tsv", "json", "jsonl", "html", "unknown"]},
+    "error_code": {"type": "string", "minLength": 1},
+    "message": {"type": "string", "minLength": 1},
+    "raw_fragment_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "parser_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "quarantine-record-v1"}
+  }
+}
+

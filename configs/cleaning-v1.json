@@ -1,0 +1,23 @@
+{
+  "algorithm_version": "deterministic-clean-v1",
+  "exact_templates": {
+    "blocks": [{"end": "|相关推荐", "start": "|免责声明:"}],
+    "lines": ["免责声明:仅供合成测试", "相关推荐"],
+    "prefixes": ["站点页头|", "平台页头 "],
+    "suffixes": ["|页尾", " 推荐阅读 页尾"]
+  },
+  "rule_version": "1.0.0",
+  "rules": [
+    {"action": "remove", "match_method": "structural", "priority": 10, "reason_code": "script_style_block", "rule_id": "remove_script_style"},
+    {"action": "normalize", "match_method": "parser", "priority": 20, "reason_code": "html_structure_or_entity", "rule_id": "normalize_html"},
+    {"action": "remove", "match_method": "unicode", "priority": 30, "reason_code": "zero_width_character", "rule_id": "remove_zero_width"},
+    {"action": "normalize", "match_method": "unicode", "priority": 40, "reason_code": "unicode_nfkc", "rule_id": "normalize_nfkc"},
+    {"action": "normalize", "match_method": "structural", "priority": 50, "reason_code": "whitespace", "rule_id": "normalize_whitespace"},
+    {"action": "remove", "match_method": "exact", "priority": 60, "reason_code": "known_template", "rule_id": "remove_exact_templates"},
+    {"action": "flag", "match_method": "structural", "priority": 70, "reason_code": "empty_text", "rule_id": "flag_empty"},
+    {"action": "flag", "match_method": "structural", "priority": 71, "reason_code": "pure_symbol_text", "rule_id": "flag_pure_symbol"},
+    {"action": "flag", "match_method": "structural", "priority": 72, "reason_code": "short_text", "rule_id": "flag_short"}
+  ],
+  "schema_version": "cleaning-config-v1",
+  "short_text_threshold": 6
+}

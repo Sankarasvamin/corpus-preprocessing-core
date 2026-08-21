@@ -1,0 +1,6 @@
+[project]
+name = "corpus-preprocessing-core"
+version = "0.3.0"
+description = "Contract-first corpus preprocessing reference implementation"
+requires-python = ">=3.11"
+dependencies = []

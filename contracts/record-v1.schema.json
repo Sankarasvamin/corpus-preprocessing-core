@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "record-v1.schema.json",
+  "title": "RecordV1",
+  "description": "文章、评论和回复统一后的最小可追溯语料记录。所有顶层字段均必填；event_date、title、clean_text 必填但可为 null。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "dataset_id",
+    "source_file",
+    "source_offset",
+    "record_type",
+    "event_date",
+    "title",
+    "raw_text",
+    "clean_text",
+    "metadata",
+    "parser_version",
+    "schema_version"
+  ],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "dataset_id": {"type": "string", "minLength": 1},
+    "source_file": {"type": "string", "minLength": 1},
+    "source_offset": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 18446744073709551615
+    },
+    "record_type": {
+      "type": "string",
+      "enum": ["article", "comment", "reply"]
+    },
+    "event_date": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+      ]
+    },
+    "title": {"type": ["string", "null"]},
+    "raw_text": {"type": "string"},
+    "clean_text": {"type": ["string", "null"]},
+    "metadata": {"type": "object"},
+    "parser_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "record-v1"}
+  }
+}
+

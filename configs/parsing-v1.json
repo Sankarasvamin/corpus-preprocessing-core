@@ -1,0 +1,6 @@
+{
+  "parser_version": "parser-v1",
+  "schema_version": "parsing-config-v1",
+  "supported_extensions": {".html": "html", ".json": "json", ".jsonl": "jsonl", ".tsv": "tsv"}
+}
+

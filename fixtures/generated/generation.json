@@ -1,0 +1,28 @@
+{
+  "categories": [
+    "category_a",
+    "category_b",
+    "category_c",
+    "category_d"
+  ],
+  "dates": [
+    "2026-08-01",
+    "2026-08-08",
+    "2026-08-15",
+    "2026-08-22"
+  ],
+  "format_record_type_counts": {
+    "html:article": 26,
+    "html:comment": 27,
+    "html:reply": 27,
+    "jsonl:article": 27,
+    "jsonl:comment": 26,
+    "jsonl:reply": 27,
+    "tsv:article": 27,
+    "tsv:comment": 27,
+    "tsv:reply": 26
+  },
+  "generator_version": "fixture-generator-v2",
+  "record_count": 240,
+  "seed": 20260820
+}

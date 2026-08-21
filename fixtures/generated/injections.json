@@ -1,0 +1,164 @@
+{
+  "injections": [
+    {
+      "case": "empty_text",
+      "expected_use": "确定性清洗中的空正文识别",
+      "record_ids": [
+        "syn-0001"
+      ]
+    },
+    {
+      "case": "whitespace_only_text",
+      "expected_use": "空白折叠后的空正文识别",
+      "record_ids": [
+        "syn-0002"
+      ]
+    },
+    {
+      "case": "zero_width_characters",
+      "expected_use": "零宽字符移除回归",
+      "record_ids": [
+        "syn-0003"
+      ]
+    },
+    {
+      "case": "unicode_normalization",
+      "expected_use": "NFKC 与全半角规范化回归",
+      "record_ids": [
+        "syn-0004"
+      ]
+    },
+    {
+      "case": "html_tags",
+      "expected_use": "HTML 标签和实体清理回归",
+      "record_ids": [
+        "syn-0005"
+      ]
+    },
+    {
+      "case": "template_noise",
+      "expected_use": "页头页尾、免责声明和推荐语识别",
+      "record_ids": [
+        "syn-0006"
+      ]
+    },
+    {
+      "case": "exact_duplicate",
+      "expected_use": "后续精确去重真值",
+      "record_ids": [
+        "syn-0007",
+        "syn-0008"
+      ]
+    },
+    {
+      "case": "near_duplicate",
+      "expected_use": "后续模糊去重真值",
+      "record_ids": [
+        "syn-0009",
+        "syn-0010"
+      ]
+    },
+    {
+      "case": "similarity_chain",
+      "expected_use": "验证 strict STAR 阻断传递式误合并",
+      "record_ids": [
+        "syn-0011",
+        "syn-0012",
+        "syn-0013"
+      ]
+    },
+    {
+      "case": "canonical_quality_candidates",
+      "expected_use": "比较完整度、标题和模板噪声的 canonical 候选",
+      "record_ids": [
+        "syn-0014",
+        "syn-0015",
+        "syn-0016"
+      ]
+    },
+    {
+      "case": "missing_title",
+      "expected_use": "标题完整度统计和 canonical 评分",
+      "record_ids": [
+        "syn-0015",
+        "syn-0017"
+      ]
+    },
+    {
+      "case": "truncated_body",
+      "expected_use": "正文截断特征回归",
+      "record_ids": [
+        "syn-0016",
+        "syn-0018"
+      ]
+    },
+    {
+      "case": "different_template_ratios",
+      "expected_use": "模板占比特征与 canonical 选择",
+      "record_ids": [
+        "syn-0014",
+        "syn-0016",
+        "syn-0019"
+      ]
+    },
+    {
+      "case": "missing_event_date",
+      "expected_use": "日期缺口与时间覆盖检查",
+      "record_ids": [
+        "syn-0020"
+      ]
+    },
+    {
+      "case": "malformed_jsonl",
+      "expected_use": "坏行隔离和稳定错误类型",
+      "raw_locations": [
+        "raw/records.jsonl:81"
+      ],
+      "record_ids": [
+        "raw-json-bad-001"
+      ]
+    },
+    {
+      "case": "missing_required_field",
+      "expected_use": "Schema 必填字段检查",
+      "raw_locations": [
+        "raw/records.jsonl:82"
+      ],
+      "record_ids": [
+        "raw-json-missing-001"
+      ]
+    },
+    {
+      "case": "schema_drift",
+      "expected_use": "历史字段漂移识别",
+      "raw_locations": [
+        "raw/records.jsonl:83"
+      ],
+      "record_ids": [
+        "raw-json-drift-001"
+      ]
+    },
+    {
+      "case": "malformed_tsv",
+      "expected_use": "TSV 列数错误隔离",
+      "raw_locations": [
+        "raw/records.tsv:82"
+      ],
+      "record_ids": [
+        "raw-tsv-bad-001"
+      ]
+    },
+    {
+      "case": "category_specific_signals",
+      "expected_use": "Leave-One-Category-Out 的匿名类别信号",
+      "record_ids": [
+        "syn-0033",
+        "syn-0034",
+        "syn-0031",
+        "syn-0032"
+      ]
+    }
+  ],
+  "schema_version": "fixture-injections-v1",
+  "seed": 20260820
+}
